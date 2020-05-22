@@ -1,0 +1,636 @@
+img {
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  /* outline: 1px solid red; */
+  font-family: "Orbitron", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+a {
+  cursor: pointer;
+}
+
+*:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url(./bg1.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  padding: 72px 0;
+  width: 100%;
+  background: transparent;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+
+}
+
+
+.logo h4 {
+  font-family: 'Saira Stencil One', cursive !important;
+  color: black;
+  text-shadow: 4px 2px 0 white;
+  transition: all 1s;
+}
+
+
+
+button {
+  height: 50px;
+  width: 50px;
+  background: transparent;
+
+  border: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% -72px);
+  justify-content: space-evenly;
+  text-align: left;
+  width: 100%;
+}
+
+.nav-list li {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  text-shadow: 2px 2px 2px black;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-list li a {
+  transition: all 1s;
+}
+
+.nav-list li a:hover {
+  color: #31bbbc;
+}
+
+.main-mcu {
+  background-image: url(./staticbg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+}
+
+.headline {
+
+  height: 200px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.headline h3 {
+  color: black;
+  font-size: 4rem;
+  text-shadow: 4px 4px 0px #31bbbc;
+}
+
+.main-mcu {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.main-mcu h3 {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tonyspan {
+  color: #31bbbc;
+  text-shadow: 3px 2px 0px white;
+}
+
+.tony-head h3 {
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 4px 4px 0px #31bbbc;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tony-wrapper {
+  height: 100vh;
+}
+
+.main-area {
+  height: 100%;
+  background-color: #31bbbc;
+
+  box-shadow: 8px 4px 2px black;
+}
+
+.tony-img {
+  flex-basis: 75%;
+}
+
+.tony-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.tony-text {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.tony-text h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  color: black !important;
+  text-shadow: 4px 2px 2px #31bbbc;
+  letter-spacing: 1px;
+}
+
+.tony-text h4 {
+  font-size: 1.3rem;
+  color: gray;
+
+}
+
+.slider-wrapper {
+  height: 100vh;
+  margin-bottom: 4rem;
+
+}
+
+
+
+.site-slider {
+  background: #000000;
+  position: relative;
+  height: 85vh;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.site-slider img {
+  height: 100%;
+  /* width: 100%; */
+  margin-right: 0 !important;
+  position: relative;
+  z-index: 1;
+  /* object-fit: cover; */
+}
+
+.imgg {
+  /* padding-top: 2rem; */
+  position: relative;
+
+}
+
+
+
+
+
+
+.imgg h4 {
+  position: absolute;
+  font-size: 3rem;
+  padding-top: 0.2rem;
+  z-index: 2;
+  text-transform: uppercase;
+  font-family: 'Saira Stencil One', cursive !important;
+  letter-spacing: 4px;
+  /* width: 350px; */
+  width: 100%;
+  text-align: center;
+
+  bottom: -10px;
+  /* opacity: 0.8; */
+  padding-left: 1px;
+}
+
+
+/* slick dots  */
+.slick-dots {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: -13%;
+  right: 40%;
+
+}
+
+.slick-dots li {
+  margin: 0 0.6rem;
+}
+
+.slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: black;
+  text-indent: -99999px;
+  border-radius: 100%;
+}
+
+.slick-dots .slick-active button {
+  transform: scale(2.5);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.205);
+}
+
+
+
+
+
+
+.merch {
+  background-color: white;
+}
+
+.merch h3 {
+  color: black;
+  text-shadow: 4px 3px 2px #31bbbc;
+}
+
+.merch-main {
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.merchs {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.merch-card {
+  width: 80%;
+  max-width: 400px;
+
+  text-align: center;
+  margin-bottom: 4rem;
+
+  background-color: white;
+}
+
+.merch-text {
+  font-size: 1.2rem;
+}
+
+.merch-text h3 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-transform: uppercase;
+}
+
+.merch-card img {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.btn {
+
+  margin: auto;
+
+  padding-bottom: 0.5rem;
+}
+
+.btn button {
+  width: 90px;
+  color: white;
+  /* text-transform: uppercase; */
+  font-size: 0.7rem;
+  text-align: center;
+  height: 30px;
+  background-color: black;
+  border-radius: 1.4rem;
+  transition: background 0.4s;
+  letter-spacing: 1px;
+}
+
+.btn button:hover {
+  background-color: #31bbbc;
+}
+
+
+.contact {
+  height: 100vh;
+  background-color: white;
+}
+
+.form-head {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.form-head h3 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: black;
+}
+
+.form {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  padding-right: 1rem;
+  flex-basis: 30%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  flex-basis: 60%;
+  color: #31bbbc !important;
+  font-weight: 600;
+}
+
+textarea {
+  max-height: 200px;
+  max-width: 400px;
+  min-height: 10px;
+
+}
+
+.item label {
+  color: black;
+  text-align: left;
+}
+
+.item input,
+textarea {
+  color: gray;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 50%;
+}
+
+.btnsubmit {
+  width: 160px;
+  color: white;
+  align-self: flex-end;
+  margin-right: 3rem;
+  text-align: center;
+  height: 40px;
+  background-color: black;
+  border-radius: 1.2rem;
+  transition: background 0.4s;
+}
+
+.btnsubmit:hover {
+  background-color: #31bbbc;
+}
+
+.btnsubmit h3 {
+  padding-top: 0rem;
+  font-size: 1.4rem;
+}
+
+.formd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.subs {
+  width: 500px;
+  background-color: black;
+  display: none;
+  transition: all 1s ease-in !important;
+}
+
+.subs:hover {
+  background-color: #31bbbc;
+
+}
+
+.subs:hover h3 {
+  color: #000000 !important;
+}
+
+.subs h3 {
+  font-size: 2rem;
+  text-align: center;
+
+  margin: auto;
+
+
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  height: 150px;
+  margin-top: 20px;
+  background-color: #31bbbc;
+}
+
+.social h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.icons {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-evenly;
+  max-width: 400px;
+}
+
+.icons svg {
+  color: white;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+  .logo h4:hover {
+    color: #31bbbc;
+    text-shadow: 4px 2px 0 black;
+    font-size: 8rem;
+  }
+
+  .merch-main {
+    height: 100vh;
+  }
+
+  .form-head {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .form-head h3 {
+    font-size: 3rem;
+  }
+
+  .subs {
+    display: inherit;
+  }
+
+  .merch-card img {
+    object-fit: cover;
+  }
+
+  .merchs {
+
+    flex-direction: row;
+    padding: 4rem 20px;
+    justify-content: space-evenly;
+  }
+
+  .merch-card {
+    width: 25%;
+    margin-bottom: 0;
+
+  }
+
+  .merch-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .nav {
+    padding: 0;
+    padding-top: 270px;
+  }
+
+  .logo {
+    font-size: 6rem;
+    opacity: 0.8;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-list li {
+    font-size: 1.5rem;
+  }
+
+  .main-mcu h3 {
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+
+  .main-mcu span {
+    display: inline-block;
+    text-align: end;
+    width: 100%;
+  }
+
+  .tony-head h3 {
+    font-size: 4rem;
+  }
+
+  .main-area {
+    flex-direction: row;
+    align-items: center;
+    padding: 70px 30px;
+  }
+
+  .tony-img {
+    flex-basis: 60%;
+  }
+
+  .tony-text h3 {
+    font-size: 2.2rem;
+  }
+}
